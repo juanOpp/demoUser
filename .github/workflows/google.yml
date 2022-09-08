@@ -35,7 +35,7 @@ jobs:
 
       - name: Create Repository
         run: |-
-         gcloud artifacts repositories create ${{ env.REPOSITORY }} --repository-format=docker --location=${{ env.REGION }} --description="Repositorio SQL" 
+         gcloud artifacts repositories create ${{ env.REPOSITORY }} --repository-format=docker --location=${{ env.REGION }} --description="Repositorio servicio" 
 
       # Configurar la autenticación en los repositorios de Docker en la región
       
