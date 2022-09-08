@@ -33,9 +33,9 @@ jobs:
         with:
          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
-      #- name: Create Repository
-      #  run: |-
-      #   gcloud artifacts repositories create ${{ env.REPOSITORY }} --repository-format=docker --location=${{ env.REGION }} --description="Repositorio SQL" 
+      - name: Create Repository
+        run: |-
+         gcloud artifacts repositories create ${{ env.REPOSITORY }} --repository-format=docker --location=${{ env.REGION }} --description="Repositorio SQL" 
 
       # Configurar la autenticación en los repositorios de Docker en la región
       
