@@ -46,7 +46,7 @@
 		</repository>
 		<repository>
 			<id>nexus</id>
-			<url>http://34.175.86.230:8081/repository/maven-public/</url>
+			<url>http://34.175.93.172:8081/repository/maven-public/</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>

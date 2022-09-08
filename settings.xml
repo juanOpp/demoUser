@@ -12,7 +12,7 @@
         <mirror>
             <id>nexus</id>
             <name>nexus</name>
-            <url>http://34.175.86.230:8081/repository/maven-public/</url>
+            <url>http://34.175.93.172:8081/repository/maven-public/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
@@ -27,7 +27,7 @@
             <repositories>
                 <repository>
                     <id>nexus</id>
-                    <url>http://34.175.86.230:8081/repository/maven-public/</url>
+                    <url>http://34.175.93.172:8081/repository/maven-public/</url>
                     <releases>
                         <enabled>true</enabled><updatePolicy>always</updatePolicy>
                     </releases>
@@ -46,7 +46,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://34.175.50.60:9000/
+                    http://34.175.69.230:9000/
                 </sonar.host.url>
             </properties>
         </profile>
