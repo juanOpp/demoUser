@@ -55,4 +55,4 @@ jobs:
 
       - name: Deploy
         run: |-
-          gcloud run deploy ${{ env.SERVICE }} --image="${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}" --service-account=${{ env.SERVICE_ACCOUNT }} --port=8080 --region=${{ env.REGION }} --allow-unauthenticated --max-instances=29 --member="allUsers" --role="roles/run.invoker"
+          gcloud run deploy ${{ env.SERVICE }} --image="${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}" --service-account=${{ env.SERVICE_ACCOUNT }} --port=8080 --region=${{ env.REGION }} --allow-unauthenticated --max-instances=29 --members="allUsers" --role="roles/run.invoker"
